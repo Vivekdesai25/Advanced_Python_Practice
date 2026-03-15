@@ -1,0 +1,123 @@
+
+# # ---- rotate array left by one ---
+# n=[1,2,3,4]
+# l=n[0]
+# for i in range (len(n)-1):
+#     if i <= len(n)-1:
+#         n[i]=n[i+1]
+# n[len(n)-1]=l
+# print(n)
+
+# # --- rorate array right by one ----
+# n=[1,2,3,4] # 4,1,2,3
+# l=n[len(n)-1]
+# for i in range (len(n)-2,-1,-1):
+#     n[i+1]=n[i]
+# n[0]=l
+# print(n)
+
+# # ----- Find Intersection of Two Arrays= ---
+# n1=[1,2,3,4]
+# n2=[2,4,6]
+# for i in n1:
+#     for j in n2:
+#         if i==j:
+#             print(i)
+
+# # ------ Remove All Occurrences of a  given Character -----
+# n="banana"
+# s="a"
+# k=""
+# for i in n:
+#     if i != s:
+#         k+=i
+# print(k)
+
+# ---- Reverse Words in a Sentence ---
+# n="        I like python and dsa "
+
+# s=n.strip()
+# r=""
+# a=[]
+
+# for i in range(len(s)-1,-1,-1):
+#     if s[i]==" ":
+#         print(r,end=" ")
+#         r=""
+#     else:
+#         r=s[i]+r
+# print(r)
+
+# for i in s:
+#     if i != " ":
+#         r+=i
+#     else:
+#         a.append(r)
+#         r=""
+# a.append(r)
+# for i in range(len(a)-1,-1,-1):
+#     print(a[i],end=" ") # list output
+
+# # ----------- Print All Pairs in Array -----
+# n=[1,2,3]
+# for i in n:
+#     for j in n[i:]: # (i+1,len(n))
+#         print(i,j)
+
+# n= "hello world"
+# # Output: "olleh dlrow"
+# r=""
+# t=[]         
+# for i in n:
+#     if i != " ":
+#         r=i+r
+#     else:
+#         print(r,end=" ")
+#         r=""
+# print(r)
+
+# # ---- Find Largest and Smallest in One Traversal ---
+# n = [4,8,1,6,-1,9,0,0,-1.4,100,300,5]
+# s=n[0]
+# l=n[0]
+# for i in n:
+#     if s>i:
+#         s=i
+#     elif l<i:
+#         l=i
+# print(s,l)
+
+# # ==== Find the First Repeating Element =====
+# n = [10,5,3,4,3,5,6]
+# r=[]
+# c=1
+# for i in range (len(n)):
+#     for j in range(len(n)):
+#         if n[i] == n[j]:
+#             c+=1
+#     if c>2:
+#         print(n[i])
+#         break
+#     # if i in r:
+#     #     print(i)
+#     # else:
+#     #     r.append(i)
+#     #     break
+
+# ----- Check if Two Arrays are Equal ----
+A = [2,2,3]
+B = [2,4,3]
+flag=True
+if len(A)!=len(B):
+    flag = False
+for i in range (len(A)):
+    if A[i] != B[i]:
+        flag=False
+        break
+    else:
+        flag=True
+print("Equal" if flag else "Unequal")
+
+
+
+
