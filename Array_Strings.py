@@ -3,7 +3,8 @@
 # for i in n:
 #     c+=1
 
-# print(c)
+# print(c
+
 
 # def toh(n,s,a,d):
 #     if n==1:
