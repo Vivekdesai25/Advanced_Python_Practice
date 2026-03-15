@@ -5,7 +5,6 @@
 
 # print(c
 
-
 # def toh(n,s,a,d):
 #     if n==1:
 #         print(f"move disk 1 from {s} to {d}")
